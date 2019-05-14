@@ -9,12 +9,12 @@ lineNames = []				# 每段内人物关系
 jieba.load_userdict("resource\\dict.txt")		# 加载字典
 with codecs.open("resource\\dict.txt","r",encoding="utf8") as f:
 	nameList = f.readlines()					# 将角色姓名存入列表nameList
-with codecs.open("resource\\龙族3·黑月之潮(下).txt", "r", "utf8") as f:
+with codecs.open("resource\\龙族3·黑月之潮·下.txt", "r", "utf8") as f:
 	for line in f.readlines():
 		wordList = jieba.lcut(line)				# 分词并返回一个列表
 		lineNames.append([])					# 为新读入的一段添加该段的人物名称列表
 		for w in wordList:						# 遍历列表
-			if w+"\n" not in nameList:
+			if w+"\r\n" not in nameList:
 				continue						# 当分词不在姓名列表nameList时认为该词不是人名
 			lineNames[-1].append(w)				# 为当前段的环境增加一个人物
 			if names.get(w) is None:			# 如果该人名在姓名字典中对应的权值为空（还没有这个键值对）
