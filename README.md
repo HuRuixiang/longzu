@@ -20,7 +20,7 @@ pip install jieba
 2、安装Gephi，可以点击[这里](https://github.com/HuRuixiang/longzu/blob/master/gephi-0.9.1-windows.exe)下载Gephi-0.9.1-windows。
 3、准备待处理的文本，这里以《龙族3·黑月之潮(下)》为例，[点击下载](https://github.com/HuRuixiang/longzu/blob/master/resource/%E9%BE%99%E6%97%8F3%C2%B7%E9%BB%91%E6%9C%88%E4%B9%8B%E6%BD%AE(%E4%B8%8B).txt)。
 4、准备姓名字典，可以直接从百度百科上复制粘贴，以下是《龙族》主要角色的姓名字典：
-<div align=center><img src="" width = 40%/></div>
+<div align=center><img src="https://github.com/HuRuixiang/longzu/blob/master/resource/dict.jpg?raw=true" width = 40%/></div>
 
 ### 导入相关库
 ```python
